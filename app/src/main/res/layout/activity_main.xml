@@ -26,11 +26,13 @@
         android:text="Escribe tu edad y pulsa el boton" />
 
     <EditText
+        android:id="@+id/age_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Edad"/>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pulsame"/>
