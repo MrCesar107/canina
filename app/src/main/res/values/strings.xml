@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Canina</string>
+    <string name="instruction_text">Escribe tu edad y pulsa el boton</string>
+    <string name="button_text">Pulsame</string>
+    <string name="edit_text_hint">Edad</string>>
+    <string name="answer_text">Si fus perro tu edad seria de: %d años</string>
+    <string name="error_text">Escribe un número válido</string>
 </resources>

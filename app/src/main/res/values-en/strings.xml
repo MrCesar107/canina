@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Doggy</string>
+    <string name="instruction_text">Write your age and touch the button</string>
+    <string name="button_text">Touch me</string>
+    <string name="edit_text_hint">My age</string>>
+    <string name="answer_text">If you were a dos, your age would be: %s years old</string>
+    <string name="error_text">Please, insert an integer number</string>
+</resources>

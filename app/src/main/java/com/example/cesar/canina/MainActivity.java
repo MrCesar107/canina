@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView answerText = findViewById(R.id.answer_text);
         final EditText ageEditText = findViewById(R.id.age_edit_text);
-        answerText.setText("Si fus perro tu edad seria de:");
+        answerText.setText(R.string.answer_text);
 
         ImageView dogImage = findViewById(R.id.dog_image);
         dogImage.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.dog));
@@ -33,15 +33,16 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String ageString = ageEditText.getText().toString();
+
                 try {
-                    String ageString = ageEditText.getText().toString();
                     int ageInt = Integer.parseInt(ageString);
                     Log.i(TAG, "Se insertó un número entero");
-                    answerText.setText("Si fueras un perro, tu edad sería de: " + ( ageInt * 6 ) + " años");
+                    answerText.setText(String.format(getString(R.string.answer_text), (ageInt * 6)));
 
 
                 } catch (NumberFormatException e) {
-                    toast.makeText(MainActivity.this, "Escribe un número válido", Toast.LENGTH_LONG).show();
+                    toast.makeText(MainActivity.this, R.string.error_text, Toast.LENGTH_LONG).show();
                     Log.e(TAG, "No se insertó un entero");
                 }
 
